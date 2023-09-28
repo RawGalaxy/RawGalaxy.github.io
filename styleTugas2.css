@@ -12,6 +12,7 @@
   src: url(/font/LeagueSpartan-Light.ttf);
 }
 
+
 *{
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@
 }
 
 body{
-  background-color: #0C87EE;
+  background-color: #cfcdfe;
   color: #AAD7FD;
 }
 .header{
@@ -30,7 +31,7 @@ body{
   left: 0;
   width: 100%;
   padding: 15px 5%;
-  background-color: #3D39FC;
+  background-color: #e5d7a4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +41,7 @@ body{
 .logo{
   font-size: 30px;
   font-family: jap, sans-serif;
-  color: #8A88FB;
+  color: #2ff137;
   text-decoration: none;
   font-weight: 1000;
   transition: .3s;
@@ -48,7 +49,7 @@ body{
 .navbar a{
   font-size: 15px;
   font-family: lma, sans-serif;
-  color: #8A88FB;
+  color: #2ff137;
   text-decoration: none;
   font-weight: 500;
   margin-left: 25px;
@@ -56,7 +57,7 @@ body{
 }
 .navbar a:hover,
 .navbar a.active{
-  color:#A4FDD9;
+  color: #3857c7;
 }
 .home{
   height: 100vh;
@@ -85,6 +86,7 @@ body{
   font-weight: 500;
   margin-top: 10px;
   font-size: 20px;
+  color: #01000f;
 }
 .homeImage{
   display: -webkit-box;
@@ -93,11 +95,11 @@ body{
   margin-top: -300px;
 }
 .synopsis{
-  background-color: #45FBB2;
+  background-color: #e7ecf8;
   display: flex;
   height: 100vh;
   align-items: center;
-  color: #0771c8;
+  color: #070c18;
   transition: 2.3s;
 }
 .synopsisContent h1{
@@ -140,9 +142,9 @@ body{
   transition: .3s;
 }
 .trailers{
-  background-color: #6360FC;
+  background-color: #fbefef;
   height: 100vh;
-  color: #00F08F;
+  color: #b42ecc;
   text-align: center;
 }
 .title-container {
@@ -204,12 +206,12 @@ body{
 }
 .characterList{
   line-height: 1.5;
-  background-color: #00F08F;
+  background-color: #efe0fb;
   border-radius: 5%;
   margin-top: 5%;
   margin-bottom: 1%;
   padding: 0 2%;
-  color: black;
+  color: #841dcd;
   font-family: 'lma';
   font-weight: 600;
 }
@@ -232,14 +234,14 @@ body{
 }
 .characterList a:link, a:visited{
   text-decoration: none; 
-  color: #6360FC;
+  color: #8a1fd6;
 }
 .portal{
-  border: 2px  #6360FC; 
+  border: 2px  #8a1fd6; 
   border-radius: 5px;
 }
 th{
-  border: 2px solid #6360FC; 
+  border: 2px solid #8a1fd6; 
   border-radius: 5px;
   text-decoration: none;
 }

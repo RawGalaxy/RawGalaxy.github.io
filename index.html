@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Horimiya</title>  
     <link rel="stylesheet" href="styleTugas2.css">
+    <script src="../rawgalaxy.github.io/script.js"></script>
   </head>
 
   <body>
@@ -392,7 +393,38 @@
         </div>
         <br>
       </section>
-    <script src="script.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Get all the anchor tags within the navbar
+          var navbarLinks = document.querySelectorAll('.navbar a');
+
+          // Loop through the links
+          navbarLinks.forEach(function(link) {
+            // Add a click event listener to each link
+            link.addEventListener('click', function(e) {
+              // Prevent the default behavior of the link
+              e.preventDefault();
+
+              // Remove the 'active' class from all links
+              navbarLinks.forEach(function(innerLink) {
+                innerLink.classList.remove('active');
+              });
+
+              // Add the 'active' class to the clicked link
+              this.classList.add('active');
+
+              // Smoothly scroll to the target section
+              const targetId = this.getAttribute('href'); // Get the href attribute value of the clicked link
+              const targetElement = document.querySelector(targetId); // Select the target element based on the href value
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            });
+          });
+        });
+
+
+      </script>
   </body>
 
 </html>
